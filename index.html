@@ -2,89 +2,154 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    <!-- Daisy Ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/57f1da92a6.js" crossorigin="anonymous"></script>
+  <!-- Daisy Ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/57f1da92a6.js" crossorigin="anonymous"></script>
 
-    <!-- Tailwind-config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
+  <!-- Tailwind-config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
         }
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>ASSIGNMENT-3</title>
-    <style>
-        .manrope-font {
-            font-family: "Manrope", sans-serif;
-        }
-    </style>
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>ASSIGNMENT-3</title>
+  <style>
+    .manrope-font {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
 </head>
 
 <body class="manrope-font  ">
-    <header class="md:container mx-auto my-8 ">
-        <!-- Navbar -->
-        <div class="navbar  bg-base-100 overflow-hidden">
-            <div class="navbar-start">
-              <a class="  text-2xl font-extrabold"><i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1"></i> Rinterio</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li class="font-bold"><a>Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end flex gap-6 ">
-               <p class="hidden md:block"> <i class="fa-solid fa-magnifying-glass p-2 rounded-full bg-white border"></i></p>
-               <p class="hidden md:block"><i class="fa-solid fa-cart-shopping p-2 rounded-full bg-white border fill-none"></i></p>
-               <button class="hidden lg:inline-block">
-              <a class="btn rounded-full hover:bg-[#ABEF5F] bg-[#ABEF5F]" >Book Consult <i class="fa-solid fa-arrow-right bg-black p-1 -rotate-45 rounded-full text-gray-400"></i></a></button>
-            </div>
-            <!-- Hello -->
-            <div class="dropdown grid ">
-              <div tabindex="0" role="button" class=" btn btn-ghost lg:hidden ">
-                <i class="fa-solid fa-bars text-2xl text-black bg-white border-2 rounded-full p-2"></i>
-              </div>
-          
-              <ul
-                tabindex="0"
-                class="dropdown-content menu menu-sm z-[1] mt-3 w-52 p-2 bg-base-100 rounded-box  shadow">
-                <li class=""><a>Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-    </header>
+  <header class="md:container mx-auto my-8 ">
+    <!-- Navbar -->
+    <div class="navbar  bg-base-100 overflow-hidden">
+      <div class="navbar-start">
+        <a class="  text-2xl font-extrabold"><i
+            class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1"></i> Rinterio</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li class="font-bold"><a>Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end flex gap-6 ">
+        <p class="hidden md:block"> <i class="fa-solid fa-magnifying-glass p-2 rounded-full bg-white border"></i></p>
+        <p class="hidden md:block"><i class="fa-solid fa-cart-shopping p-2 rounded-full bg-white border fill-none"></i>
+        </p>
+        <button class="hidden lg:inline-block">
+          <a class="btn rounded-full hover:bg-[#ABEF5F] bg-[#ABEF5F]">Book Consult <i
+              class="fa-solid fa-arrow-right bg-black p-1 -rotate-45 rounded-full text-gray-400"></i></a></button>
+      </div>
+      <!-- Hello -->
+      <div class="dropdown grid ">
+        <div tabindex="0" role="button" class=" btn btn-ghost lg:hidden ">
+          <i class="fa-solid fa-bars text-2xl text-black bg-white border-2 rounded-full p-2"></i>
+        </div>
+
+        <ul tabindex="0" class="dropdown-content menu menu-sm z-[1] mt-3 w-52 p-2 bg-base-100 rounded-box  shadow">
+          <li class=""><a>Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
     <!-- Banner section -->
 
     <section class="md:container mx-auto">
-      <div class=" mx-auto justify-center">
+      <div class=" mx-auto justify-center mx-2">
         <img class="mx-auto" src="./assets/banner.png" alt="">
-        <h1 class="text-center text-black  text-5xl md:text-7xl font-black leading-tight mt-6">A barn house of this design has a <br> striking appearance</h1>
-        <p class="text-gray-500 text-center text-sm md:w-2/4 mx-auto mt-6 font-bold">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-        <button class=" btn hover:bg-[#ABEF5F] mx-auto font-black mt-8 flex text-xl border rounded-full bg-lime-200 ">View details <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1"></i> </button>
+        <h1 class="text-center text-black  text-5xl md:text-7xl font-black leading-tight mt-6">A barn house of this
+          design has a <br> striking appearance</h1>
+        <p class="text-gray-500 text-center text-sm md:w-2/4 mx-auto mt-6 font-bold">The barn house captivates with its
+          blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large
+          windows that flood the space with natural light.</p>
+        <button
+          class=" btn hover:bg-[#ABEF5F] mx-auto font-black mt-8 flex text-xl border rounded-full bg-lime-200 ">View
+          details <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1"></i> </button>
       </div>
     </section>
+  </header>
+
+<!-- Main -->
+
+
+  <main class="bg-gray-100">
+    <section class="md:container mx-auto my-10 md:my-40 py-16">
+      <!-- Container -->
+      <div class="">
+        <img class="hidden md:inline-block" src="./assets/Vector.png" alt="">
+      </div>
+      <div class="md:flex ">
+        <!-- Text-container -->
+        
+        <div class="md;ml-20 md:w-2/4 mx-2">
+        <div class="flex justify-center md:justify-start">
+          <button class="border flex-start rounded-full py-1 px-3 hover:bg-white  bg-white mt-4 mb-4"><i class="fa-solid fa-arrow-right "></i>
+            About Us</button>
+          </div>
+          <h1 class="text-4xl text-center md:text-left md:text-6xl text-black font-black">We design thoughtful, liveable spaces</h1>
+          <p class="text-sm text-center md:text-left text-gray-500 mt-6 md:w-3/4 mb-6 font-bold">The barn house captivates with its blend of rustic charm and 
+            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <!-- text-card -->
+             <div class="flex gap-4 md:items-center bg-white py-6 px-4 md:w-3/4 rounded-lg mb-8">
+              <div>
+                <img class="w-full" src="./assets/commercial.png" alt="">
+              </div>
+              <div>
+              <h1 class="text-xl font-bold">Commercial</h1>
+              <p class="text-sm font-bold text-gray-500 w-full md:w-3/4">Spacious, modern, versatile, prime location, accessible, functional.</p>
+            </div>
+
+             </div>
+
+             <div class="flex gap-4 items-center bg-white py-6 px-4 md:w-3/4 rounded-lg mb-7">
+              <div>
+                <img src="./assets/commercial.png" alt="">
+              </div>
+              <div>
+              <h1 class="text-xl font-bold">Residential</h1>
+              <p class="text-sm font-bold text-gray-500 w-3/4">Cozy, welcoming, comfortable, peaceful, private, family-friendly.</p>
+            </div>
+
+             </div>
+             
+            
+
+
+        </div>
+        <!-- Image Container -->
+        <div>
+          <img class="" src="./assets/Rectangle.png" alt="">
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+
 </body>
 
 </html>
