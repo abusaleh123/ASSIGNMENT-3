@@ -38,13 +38,13 @@
 <body class="manrope-font  ">
   <header class="md:container mx-auto my-8 ">
     <!-- Navbar -->
-    <div class="navbar  bg-base-100 overflow-hidden">
+    <div class="navbar bg-base-100 overflow-hidden">
       <div class="navbar-start">
         <a class="  text-2xl font-extrabold"><i
             class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1"></i> Rinterio</a>
       </div>
       <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
+        <ul class="gap-12 menu-horizontal px-1">
           <li class="font-bold"><a>Home</a></li>
           <li><a href="">Services</a></li>
           <li><a>Portfolio</a></li>
@@ -61,12 +61,12 @@
               class="fa-solid fa-arrow-right bg-black p-1 -rotate-45 rounded-full text-gray-400"></i></a></button>
       </div>
       <!-- Hello -->
-      <div class="dropdown grid ">
-        <div tabindex="0" role="button" class=" btn btn-ghost lg:hidden ">
-          <i class="fa-solid fa-bars text-2xl text-black bg-white border-2 rounded-full p-2"></i>
+      <div class="dropdown grid relative ">
+        <div tabindex="0" role="button" class="  lg:hidden ">
+          <i class="fa-solid fa-bars text-2xl text-black bg-white "></i>
         </div>
 
-        <ul tabindex="0" class="dropdown-content menu menu-sm z-[1] mt-3 w-52 p-2 bg-base-100 rounded-box  shadow mr-28">
+        <ul tabindex="0" class="dropdown-content menu menu-sm  mt-3 w-max h-10 p-2 bg-base-100 rounded-box shadow flex absolute right-7  z-30 border ">
           <li class=""><a>Home</a></li>
           <li><a href="">Services</a></li>
           <li><a>Portfolio</a></li>
@@ -79,9 +79,9 @@
     <!-- Banner section -->
 
     <section class="md:container mx-auto">
-      <div class=" mx-auto justify-center">
+      <div class=" mx-auto justify-center mt-12 lg:mt-0">
         <img class="mx-auto" src="./assets/banner.png" alt="">
-        <h1 class="text-center text-black  text-5xl md:text-7xl font-black leading-tight mt-6">A barn house of this
+        <h1 class="text-center text-black  text-5xl md:text-7xl font-black leading-tight  z-10">A barn house of this
           design has a <br> striking appearance</h1>
         <p class="text-gray-500 text-center text-sm md:w-2/4 mx-auto mt-6 font-bold">The barn house captivates with its
           blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large
@@ -405,7 +405,7 @@
           <input class="p-6 col-span-2 lg:col-span-1  rounded-full border-none" type="text" placeholder="Last Name*">
           <input class="p-6 col-span-2 lg:col-span-1  rounded-full border-none" type="number" placeholder="Phone Number*">
           <input class="p-6 col-span-2 lg:col-span-1  rounded-full border-none" type="email" placeholder="Email Number*">
-          <textarea class="w-full h-40 rounded-xl p-4 items-start col-span-2" name="" id=""
+          <textarea class="w-full h-40 rounded-xl p-4 items-start col-span-2 resize-none" name="" id=""
             placeholder="Write Your Message Here"></textarea>
         </div>
         <button
